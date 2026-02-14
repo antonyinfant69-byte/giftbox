@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="hearts-container"></div>
+
+    <div id="main-card" class="container">
+        <h1 id="question-text">Will you be my Valentine?</h1>
+        <div class="buttons">
+            <button id="yesBtn" onclick="handleYes()">YES!</button>
+            <button id="noBtn" onmouseover="moveNoButton()">No</button>
+        </div>
+    </div>
+
+    <div id="gift-section" class="hidden">
+        <h2>I knew you'd say yes! 😉</h2>
+        <p>Pick your gifts below:</p>
+        <div class="gift-grid">
+            <div class="gift" onclick="openGift(1)">🎁 1. What I Love</div>
+            <div class="gift" onclick="openGift(2)">🎁 2. Our Memories</div>
+            <div class="gift" onclick="openGift(3)">✉️ 3. A Letter</div>
+            <div class="gift" onclick="openGift(4)">📜 4. The Agreement</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <audio id="loveSong">
+    <source src="we-dont-talk-anymore.mp3" type="audio/mpeg">
+</audio>
+</body>
+</html>
